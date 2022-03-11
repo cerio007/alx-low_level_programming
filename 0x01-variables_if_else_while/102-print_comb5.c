@@ -2,7 +2,8 @@
 
 /**
  * main - main block
- * Description: Print all possible combinations of two-digit numbers ranging from 0 to 99
+ * Description: Print all possible combinations of two-digit numbers.
+ * Numbers ranging from 0 to 99
  * Return: Always 0
  */
 int main(void)
