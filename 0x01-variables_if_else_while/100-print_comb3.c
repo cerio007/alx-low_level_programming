@@ -7,28 +7,28 @@
  */
 int main(void)
 {
-	int i, j, k;
+	int a, b, c;
 	
-	i = 0;
+	a = 0;
 
-	while (i < 100)
+	while (a < 100)
 	{
-		j = i % 10;
-		k = i / 10;
+		b = a % 10;
+		c = a / 10;
 
-		if (k < j)
+		if (c < b)
 		{
-			putchar(k + '0');
-			putchar(j + '0');
+			putchar(c + '0');
+			putchar(b + '0');
 
-			if (i < 89)
+			if (a < 89)
 			{
 				putchar(44);
 				putchar(32);
 			}
 		}
 
-		i++
+		a++;
 	}
 	putchar('\n');
 
