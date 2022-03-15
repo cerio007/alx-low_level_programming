@@ -1,18 +1,24 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - main entry
  * Description: Print lowercase alphabets.
  * Return: Always 0
  */
-int main(void)
+int print_alphabet(void)
 {
-	print_alphabet();
-	int p;
+	char h;
+	
+	h = 'a';
+	
+	while (h <= 'z')
+	{
+		_putchar(h);
+		h++;
+	}
 
-	for (p = 0; p < 26; p++)
-		putchar(print_alphabet());
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
