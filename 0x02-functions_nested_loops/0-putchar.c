@@ -5,9 +5,9 @@
  * Description: Print _putchar and a new line
  * Return: Always 0
  */
-int main()
+int main(void)
 {
-	printf("_putchar");
+	printf("_putchar \\n");
 
 	return (0);
 }
