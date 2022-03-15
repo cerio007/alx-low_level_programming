@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char print_alphabet();
+	print_alphabet();
 	int p;
 
 	for (p = 0; p < 26; p++)
