@@ -11,7 +11,7 @@ int main(void)
 	int p;
 
 	for (p = 0; p < 26; p++)
-		putchar(alp[26]);
+		putchar(print_alphabet());
 	putchar('\n');
 
 	return (0);
