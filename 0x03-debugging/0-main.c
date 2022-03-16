@@ -2,6 +2,7 @@
 
 /**
 * main - Check the code
+*
 * Return: Always 0
 */
 
