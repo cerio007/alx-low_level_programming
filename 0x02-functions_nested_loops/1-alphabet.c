@@ -7,15 +7,12 @@
  * Return: Always 0
  */
 void print_alphabet(void)
-{
-	char h;
+{	
+	int h;
 	
-	h = 'a';
-	
-	while (h <= 'z')
+	for (h = 97; h <= 122; h++)
 	{
 		_putchar(h);
-		h++;
 	}
 
 	_putchar('\n');
