@@ -4,9 +4,8 @@
 * main - multiplies two integers
 * @a: first integer
 * @b: second integer
-* Return: multiplication
+* Return: Multiplication
 */
-
 int mul(int a, int b)
 {
 	return (a * b);
