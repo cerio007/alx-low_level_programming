@@ -7,7 +7,7 @@
 
 int mul(int a, int b)
 {
-	int i, j, k;
+	int i, j;
 
 	printf("Multiplying two integers: \n");
 
