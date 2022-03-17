@@ -9,7 +9,7 @@ void print_numbers(void)
 {
 	int i;
 
-	i = o;
+	i = 0;
 
 	while (i < 10)
 	{
