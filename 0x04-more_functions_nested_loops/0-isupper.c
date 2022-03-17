@@ -5,7 +5,6 @@
  * @c: Input character
  * Return: 1 if an uppercase, 0 if otherwise
  */
-
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
