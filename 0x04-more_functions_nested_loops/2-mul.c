@@ -2,20 +2,12 @@
 
 /**
 * main - multiplies two integers
-* Return: Always 0
+* @a: first integer
+* @b: second integer
+* Return: multiplication
 */
 
 int mul(int a, int b)
 {
-	int i, j;
-
-	printf("Multiplying two integers: \n");
-
-	scanf("%d %d", &i, &j);
-
-	j = i * j;
-
-	printf("j = %d", j);
-
-	return (0);
+	return (a * b);
 }
