@@ -13,9 +13,9 @@ int mul(int a, int b)
 
 	scanf("%d %d", &i, &j);
 
-	k = i * j;
+	j = i * j;
 
-	printf("k = %d", k);
+	printf("j = %d", j);
 
 	return (0);
 }
