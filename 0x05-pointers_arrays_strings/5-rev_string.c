@@ -3,7 +3,7 @@
 /**
  * rev_string - reverse a string
  * @s: input string
- * Retuen: no return
+ * Return: no return
  */
 void rev_string(char *s)
 {
@@ -15,7 +15,15 @@ void rev_string(char *s)
 			break;
 		count++;
 	}
+	str = s;
 
-	for (count--; count >= 0; count--)
-		_putchar(s[count]);
+	for (i = 0; i < (count - 1); i++)
+	{
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(str + j);
+			*(str + j) = *(str + (j - 1));
+			*(str + (j - 1)) = temp;
+		}
+	}
 }
