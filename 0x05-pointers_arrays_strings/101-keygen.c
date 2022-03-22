@@ -6,7 +6,7 @@
  * main - generates keygen
  * Return: Always 0
  */
-int main(void)
+int main()
 {
 	int r = 0, c = 0;
 	time_t t;
