@@ -6,7 +6,7 @@
  * main - generates keygen
  * Return: Always 0
  */
-int main()
+int main(void)
 {
 	int r = 0, c = 0;
 	time_t t;
@@ -20,6 +20,6 @@ int main()
 		c = c + r;
 		printf("%c", r);
 	}
-	printf("%c\n", (2772 - c));
+	printf("%c\n", c);
 	return (0);
 }
