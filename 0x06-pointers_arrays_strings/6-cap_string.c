@@ -8,21 +8,21 @@
 
 char *cap_string(char *s)
 {
-	int o, p, q;
+	int i, j, f;
 	char seps[] = {' ', '\t', '\n', ',', ';',
 	     '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	q = 'A' - 'a';
+	f = 'A' - 'a';
 	if (s[0] >= 'a' && s[0] <= 'z')
-		s[0] += q;
-	for (o = 0; s[o] != '\0'; o++)
+		s[0] += f;
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (p = 0; p < 13; p++)
+		for (j = 0; j < 13; j++)
 		{
-			if (s[o] == seps[p])
+			if (s[i] == seps[j])
 			{
-				if (s[o + 1] >= 'a' && s[o + 1] <= 'z')
-					s[o + 1] += q;
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+					s[i + 1] += f;
 			}
 		}
 	}
