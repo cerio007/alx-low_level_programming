@@ -6,6 +6,7 @@
 * @b: constant byte
 * @n: filled byte
 * Return: return pointer to dest
+*/
 
 char *_memset(char *s, char b, unsigned int n)
 {
