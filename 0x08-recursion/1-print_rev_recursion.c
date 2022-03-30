@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _print_rev_recursion - prints srring in revwrse
+* _print_rev_recursion - prints string in reverse
 * @s: string
 * Return: no return
 */
