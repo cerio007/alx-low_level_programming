@@ -23,7 +23,7 @@ int _strlen_recursion(char *s)
 * Return: 
 */
 
-void comparism(char *s, int c1, int c2)
+int comparism(char *s, int c1, int c2)
 {	
 	if (*(s + c1) == *(s + c2))
 	{
