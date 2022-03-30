@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*_strlen_recursion _ gets the length of a string
+*_strlen_recursion - gets the length of a string
 * @s: string
 * Return: length of a string
 */
@@ -20,11 +20,11 @@ int _strlen_recursion(char *s)
 * @s: string
 * @c1: smallest iterator
 * @c2: biggest iterator
-* Return: 
+* Return: 0
 */
 
 int comparism(char *s, int c1, int c2)
-{	
+{
 	if (*(s + c1) == *(s + c2))
 	{
 		if (c1 == c2 || c1 == c2 + 1)
