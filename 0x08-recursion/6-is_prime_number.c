@@ -17,7 +17,7 @@ int prime_number(int n, int c)
 		else
 			return (0);
 	}
-	return (0 + prime_number(n, c +1));
+	return (0 + prime_number(n, c + 1));
 }
 
 /**
