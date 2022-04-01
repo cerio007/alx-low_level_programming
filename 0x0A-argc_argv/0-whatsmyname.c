@@ -2,10 +2,10 @@
 
 /**
 * main - Entry point
-* Description: Print its name,
+* Description: a program that print its name,
 * followed by a new line
-* @argc: agrument count
-* @argv: argument vector
+* @argc: number of cli argument
+* @argv: a vector that stores cli agruments
 * Return: Always 0
 */
 
