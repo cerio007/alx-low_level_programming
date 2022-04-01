@@ -6,7 +6,8 @@
 * followed by a new line
 * @argc: number of cli argument
 * @argv: a vector that stores cli agruments
-* Return: Always 0
+*
+* Return: Always 0 (success)
 */
 
 int main (int argc, char **argv)
