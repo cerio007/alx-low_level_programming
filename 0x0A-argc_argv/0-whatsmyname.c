@@ -2,15 +2,13 @@
 
 /**
 * main - Entry point
-* Description: a program that print its name,
-* followed by a new line
-* @argc: number of cli argument
-* @argv: a vector that stores cli agruments
-*
-* Return: Always 0 (success)
+* Description: a program that print its name followed by a new line
+* @argc: argument count
+* @argv: agrument vector
+* Return: Always 0
 */
 
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	(void)argc;
 	printf("%s\n", *argv);
