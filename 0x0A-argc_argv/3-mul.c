@@ -13,11 +13,9 @@
 int main(int argc, char **argv)
 {
 	int multiples;
+
 	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
+		puts("Error");
 	else
 	{
 		multiples = atoi(argc[1]) * atoi(argc[2]);
