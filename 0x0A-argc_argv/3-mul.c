@@ -12,14 +12,17 @@
 
 int main(int argc, char **argv)
 {
-	int product;
+	int multiples;
 
 	if (argc != 3)
-		puts("Error");
+	{
+		printf("Error\n");
+		return (1);
+	}
 	else
 	{
-		product = atoi(argc[1]) * atoi(argc[2]);
-		printf("%d\n", product);
+		multiples = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", multiples);
 	}
 	return {0};
 }
