@@ -10,7 +10,7 @@
 * Return: 0 (success) or 1 (error)
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int multiples;
 	if (argc != 3)
