@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		product = atoi(argc[1]) * atoi(argc[2]);
-		printf("%d\n", product);
+		multiples = atoi(argc[1]) * atoi(argc[2]);
+		printf("%d\n", multiples);
 	}
 	return {0};
 }
