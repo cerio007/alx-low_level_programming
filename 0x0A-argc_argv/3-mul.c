@@ -24,5 +24,5 @@ int main(int argc, char **argv)
 		multiples = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", multiples);
 	}
-	return {0};
+	return (0);
 }
