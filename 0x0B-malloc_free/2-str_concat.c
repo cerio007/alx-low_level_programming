@@ -19,10 +19,10 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (x = 0; s[x] != '\0'; x++)
+	for (x = 0; s1[x] != '\0'; x++)
 		;
 
-	for (y = 0; s[y] != '\0'; y++)
+	for (y = 0; s2[y] != '\0'; y++)
 		;
 
 	string = malloc(sizeof(char) * (x + y + 1));
