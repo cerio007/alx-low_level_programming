@@ -33,7 +33,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (b = c = ba = 0; d < c; c++, ba++)
+	for (b = c = ba = 0; ba < c; c++, ba++)
 	{
 		if (av[b][c] == '\0')
 		{
