@@ -11,7 +11,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *abot;
-	int a, b, c, ba;
+	int a, b, c, bc;
 
 	if (ac == 0)
 		return (NULL);
@@ -33,20 +33,20 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (b = c = ba = 0; ba < c; c++, ba++)
+	for (b = c = bc = 0; ba < c; c++, bc++)
 	{
 		if (av[b][c] == '\0')
 		{
-			abot[ba] = '\n';
+			abot[bc] = '\n';
 			b++;
-			ba++;
+			bc++;
 			c = 0;
 		}
-		if (ba < a - 1)
-			abot[ba] = av[b][c];
+		if (bc < a - 1)
+			abot[bc] = av[b][c];
 	}
 
-	abot[ba] = '\0';
+	abot[bc] = '\0';
 
 	return (abot);
 }
