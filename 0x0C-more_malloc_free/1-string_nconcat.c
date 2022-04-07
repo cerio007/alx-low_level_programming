@@ -12,8 +12,8 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *so;
-	unsigned int as1, as2, aso, z;
+	char *concat;
+	unsigned int ys1, ys2, yconcat, z;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -21,29 +21,29 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (as1 = 0; s1[as1] != '\0'; as1++)
+	for (ys1 = 0; s1[ys1] != '\0'; ys1++)
 		;
 
-	for (as2 = 0; s2[as2] != '\0'; as2++)
+	for (ys2 = 0; s2[ys2] != '\0'; ys2++)
 		;
 
-	if (n > as2)
-		n = as2;
+	if (n > ys2)
+		n = ys2;
 
-	aso = as1 + n;
+	yconcat = ys1 + n;
 
-	so = malloc(aso + 1);
+	concat = malloc(yconcat + 1);
 
-	if (so == NULL)
+	if (concat == NULL)
 		return (NULL);
 
-	for (z = 0; z < aso; z++)
-		if (z < as1)
-			so[z] = s1[z];
+	for (z = 0; z < yconcat; z++)
+		if (z < ys1)
+			concat[z] = s1[z];
 		else
-			so[z] = s2[z - as1];
+			concat[z] = s2[z - ys1];
 
-	so[z] = '\0';
+	concat[z] = '\0';
 
-	return[so]
+	return[concat]
 }
