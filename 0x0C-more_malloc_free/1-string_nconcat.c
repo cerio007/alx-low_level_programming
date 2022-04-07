@@ -15,21 +15,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *concat;
 	unsigned int l1, l2, z;
 
-	if (s1 == NULL)
-		s1 = "";
-
-	if (s2 == NULL)
-		s2 = "";
-
-	for (l1 = 0; s1[l1] != '\0'; l1++)
-		;
-
-	for (l2 = 0; s2[l2] != '\0'; l2++)
-		;
-
-	if (n > l2)
-		n = l2;
-
+	l1 = s1 == NULL ? 0 : strlen(s1);
+	l2 = s2 == NULL ? 0 : strlen(s2);
+	n = n > l2 ? l2 : n;
 
 	concat = malloc(sizeof(char) * (l1 + n + 1));
 
