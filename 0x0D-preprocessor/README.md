@@ -1,6 +1,7 @@
 # Preprocessor
 ## Technologies
 * Script written and tested on Ubuntu 20.04LTS
+* Files to be compiled using gcc
 ## Files
 filename | Descriptiom
 --- | ---
