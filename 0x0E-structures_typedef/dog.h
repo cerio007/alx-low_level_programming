@@ -1,4 +1,5 @@
 #ifndef _DOG_H
+
 #define _DOG_H
 
 /**
@@ -7,6 +8,8 @@
  * @age: age of the dog
  * @owner: owner of the dog
  */
+
+typedef struct dog dog_t;
 
 struct dog
 {
