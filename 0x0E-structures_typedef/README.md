@@ -7,9 +7,6 @@ fioe name | Description
 --- | ---
 `0-main.c` | Checks `dog.h` code
 `dog.h` | Defines a new type struct dog with some elements
-* name, type = char *
-* age, type = float
-* owner, type = char *
 `1-init_dog.c` | Writes a function that initialize a variable of type struct dog
 `1-main.c` | Checks `1-init_dog.c` and `dog.h` codes
 `2-print_dog.c` | Writes a function that prints a struct dog
