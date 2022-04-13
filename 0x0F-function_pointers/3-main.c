@@ -4,39 +4,40 @@
 
 /**
  * main - Entry point
- * @argc: argument count.
- * @argv: argument vector.
- * Return: Always 0.
+ * Description: A program that performs simple operations
+ * @argc: Number of cli arguments
+ * @argv: Vector of cli arguments
+ * Return: Always 0 (Success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
+	int (*op)(int, int);
 	int num1, num2;
-	int (*operation)(int, int);
 
 	if (argc != 4)
 	{
-		printf("Error\n");
+		puts("Error");
 		exit(98);
 	}
 
 	if (get_op_func(argv[2]) == NULL)
 	{
-		printf("Error\n");
+		puts("Error");
 		exit(99);
 	}
 
-	
 	if ((*argv[2] == '/' || *argv[2] == '%') && atoi(argv[3]) == 0)
 	{
-		printf("Error\n");
+		puts("Error");
 		exit(100);
 	}
 
-	operation = get_op_func(argv[2]);
+	op = get_op_func(argv[2]);
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	printf("%d\n", operation(num1, num2));
+	printf("%d\n", op(num1, num2));
+
 	return (0);
 }
