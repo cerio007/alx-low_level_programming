@@ -28,13 +28,13 @@ void print_all(const char * const format, ...)
 		switch (format[x])
 		{
 		case 'c':
-			printf("%c", va_arg(valist, char)), z = 1;
+			printf("%c", va_arg(valist, int)), z = 1;
 			break;
 		case 'i':
 			printf("%d", va_arg(valist, int)), z = 1;
 			break;
 		case 'f':
-			printf("%f", va_arg(valist, float)), z = 1;
+			printf("%f", va_arg(valist, double)), z = 1;
 			break;
 		case 's':
 			string = va_arg(valist, char *), z = 1;
