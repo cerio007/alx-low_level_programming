@@ -14,6 +14,7 @@ void print_all(const char * const format, ...)
 	const char t_arg[] = "cifs";
 
 	va_start(valist, format);
+
 	while (format && format[x])
 	{
 		y = 0;
@@ -51,5 +52,6 @@ void print_all(const char * const format, ...)
 	}
 
 	printf("\n");
+
 	va_end(valist);
 }
